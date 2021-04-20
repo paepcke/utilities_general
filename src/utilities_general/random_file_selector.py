@@ -72,7 +72,7 @@ if __name__ == '__main__':
                         help='output file names comma separated; default: space separated',
                         default=False)
     
-    parser.add_argument('-d', '--dir',
+    parser.add_argument('-d', '--directory',
                         help='directory from which to select files; default: current dir',
                         default=None)
     
@@ -88,6 +88,6 @@ if __name__ == '__main__':
 
 
     RandomFilePicker(args.percentage,
-                     directory=args.dir, 
+                     directory=args.directory, 
                      full_path=args.full_path, 
                      csv=args.csv)
