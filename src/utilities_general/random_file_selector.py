@@ -27,6 +27,8 @@ class RandomFilePicker:
         '''
         if directory is None:
             directory = os.curdir
+            
+        directory = os.path.realpath(directory)
         
         if not os.path.exists(directory) or not os.path.isdir(directory):
             print(f"Location {dir} either does not exist, or is not a directory")
